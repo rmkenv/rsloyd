@@ -214,69 +214,6 @@ em{ font-style:normal; font-weight:500; color:var(--linseed-2); }
 .shop-head h2{ font-size:clamp(2rem,4vw,2.8rem); margin-bottom:0.6rem; }
 .shop-head p{ color:rgba(237,227,208,0.75); max-width:56ch; }
 
-.carousel{
-  position:relative;
-  max-width:1100px; margin:0 auto;
-}
-.carousel-track{
-  display:flex; gap:1.25rem;
-  overflow-x:auto;
-  scroll-snap-type:x mandatory;
-  scroll-behavior:smooth;
-  padding-bottom:0.5rem;
-  -ms-overflow-style:none; scrollbar-width:none;
-}
-.carousel-track::-webkit-scrollbar{ display:none; }
-.carousel-slide{
-  flex:0 0 auto;
-  width:min(260px, 70vw);
-  scroll-snap-align:start;
-  display:flex; flex-direction:column;
-  border:1px solid rgba(237,227,208,0.14);
-  border-radius:4px; overflow:hidden;
-  transition:border-color 0.2s ease;
-}
-.carousel-slide:hover{ border-color:var(--linseed); }
-.carousel-slide-media{ display:block; aspect-ratio:4/5; }
-.carousel-slide-media img{ width:100%; height:100%; object-fit:cover; display:block; }
-.grain-swatch{ display:block; width:100%; height:100%; filter:url(#grain); }
-.swatch-1{ background:#8a5a2e; }
-.swatch-2{ background:#6b7268; }
-.swatch-3{ background:#4f5d40; }
-.swatch-4{ background:#3f2f1e; }
-.carousel-caption{ padding:0.9rem 1rem 1rem; }
-.carousel-caption-text{ display:block; font-weight:500; font-size:0.96rem; margin-bottom:0.3rem; }
-.carousel-caption-link{ display:block; font-family:var(--mono); font-size:0.76rem; color:var(--linseed-2); }
-.carousel-arrow{
-  position:absolute; top:calc(50% - 1.75rem); z-index:3;
-  width:2.6rem; height:2.6rem;
-  border-radius:50%;
-  border:1px solid rgba(237,227,208,0.3);
-  background:rgba(43,33,23,0.85);
-  color:var(--sapwood);
-  font-size:1.1rem; line-height:1;
-  cursor:pointer;
-  transition:background 0.2s ease, border-color 0.2s ease;
-}
-.carousel-arrow:hover{ background:var(--linseed); border-color:var(--linseed); color:var(--bark); }
-.carousel-prev{ left:-1.3rem; }
-.carousel-next{ right:-1.3rem; }
-@media (max-width:760px){
-  .carousel-arrow{ display:none; }
-}
-.carousel-dots{
-  display:flex; justify-content:center; gap:0.5rem;
-  margin-top:1.5rem;
-}
-.carousel-dot{
-  width:8px; height:8px; border-radius:50%;
-  border:none; padding:0;
-  background:rgba(237,227,208,0.25);
-  cursor:pointer;
-  transition:background 0.2s ease, transform 0.2s ease;
-}
-.carousel-dot.is-active{ background:var(--linseed-2); transform:scale(1.25); }
-
 /* ---------- IG CALLOUT ---------- */
 .ig-callout{
   padding:clamp(4.5rem,12vw,8rem) clamp(1.25rem,4vw,3rem);

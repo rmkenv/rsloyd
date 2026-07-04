@@ -48,6 +48,6 @@ vercel --prod # promotes to your production URL
 ```
 
 ## Customizing later
-- Swap the SVG "swatch" cards in the Shop section for real product photos whenever you have them shot — just replace `.grain-swatch` spans with `<img>` tags.
+- The Shop section links straight to Instagram — if you'd rather show pieces directly on the site again later, a photo grid or carousel can be added back in.
 - Add a custom domain (e.g. `ryanssloyd.com`) under the Vercel project's **Settings → Domains**.
 - If you want a contact form or email instead of Instagram DMs only, that's a quick add.
