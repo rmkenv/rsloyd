@@ -1,14 +1,15 @@
 # Ryan's Sloyd
 
-A single-page site for **Ryan's Sloyd** — handcarved wooden spoons, kitchen tools, and treen ware made in Catonsville, MD in the Nordic sloyd tradition.
+A single-page site for **Ryan's Sloyd** — handcarved wooden spoons, kitchen tools, and treen ware made in Hampshire County, WV in the Nordic sloyd tradition.
 
 Plain HTML/CSS/JS, no build step, no framework. Instagram (**@ryanssloyd**) is linked in the nav, the hero, a full-width callout section, the shop cards, the commissions section, and the footer.
 
 ## Files
-- `index.html` — page content
+- `index.html` — page content (logo and favicons are embedded directly as base64, so the page works even opened standalone with no other files)
 - `style.css` — design system (wood-tone palette, Fraunces/Inter/JetBrains Mono type)
 - `script.js` — footer year
 - `vercel.json` — static-site config for Vercel
+- `assets/` — source PNGs (kept for reference/editing; not required at runtime since they're inlined in `index.html`)
 
 ## Put it on GitHub
 
